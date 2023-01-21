@@ -105,8 +105,8 @@ function addtokens(event) {
                     },
                     body: await encodeValues({
                         name: x.name,
-                        addedTokens: 500,
-                        addedXp: 300
+                        addedTokens: 900,
+                        addedXp: 500
                     }, e.secret)
                 }).then(() => alert('Added daily rewawrds!')).catch(() => alert('There was an error when adding rewards!'));
             }).catch(() => alert('There was an error encoding requests!'));
@@ -161,7 +161,7 @@ function spoofblooks(event) {
                 lockedBlooks: []
             })
         } else {
-            window.alert("Run this in a lobby (https://blooket.com/play/lobby/)")
+            window.alert("Run this in a lobby (https://play.blooket.com/play)")
         }
     } catch (hack) {
         if (confirm('An error has occured, would you like to open the debugger?')) {
